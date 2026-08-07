@@ -618,3 +618,119 @@ img { max-width: 100%; display: block; }
   .event-body h3   { font-size: 1.08rem; }
   .event-meta      { flex-direction: column; gap: 5px; }
 }
+
+
+/* --- How to Join (join.html) — Member 3 ------------------ */
+.section-alt {
+  background: var(--surface-alt);
+  border-block: 1px solid var(--line);
+}
+
+/* Step walkthrough */
+.steps {
+  counter-reset: step;
+  display: grid;
+  gap: 16px;
+  max-width: 760px;
+  margin-inline: auto;
+  padding: 0;
+  list-style: none;
+}
+
+.step {
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  gap: 20px;
+  align-items: start;
+  padding: 24px 26px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.step:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+
+.step-num {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: linear-gradient(150deg, var(--indigo), var(--navy));
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.step-body h3 { margin: 8px 0 8px; font-size: 1.16rem; }
+.step-body p  { margin-bottom: 0; font-size: .96rem; }
+
+/* Schedule table */
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.schedule-table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  font-size: .95rem;
+}
+
+.schedule-table th {
+  padding: 15px 20px;
+  background: var(--navy);
+  color: #fff;
+  text-align: left;
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.schedule-table td {
+  padding: 15px 20px;
+  border-top: 1px solid var(--line);
+}
+
+.schedule-table tbody tr:nth-child(even) { background: var(--surface-alt); }
+.schedule-table tbody tr:hover           { background: rgba(59, 91, 219, .05); }
+.schedule-table td:first-child           { font-weight: 600; color: var(--ink); }
+
+/* Guidelines */
+.guideline {
+  padding: 24px 26px;
+  border-left: 3px solid var(--amber);
+  border-radius: var(--radius-sm);
+  background: var(--surface-alt);
+}
+.guideline h3 { font-size: 1.06rem; margin-bottom: 6px; }
+.guideline p  { margin-bottom: 0; font-size: .94rem; }
+
+/* Responsive — join page */
+@media (max-width: 900px) {
+  .step { padding: 20px 22px; gap: 16px; }
+}
+
+@media (max-width: 600px) {
+  .steps { gap: 13px; }
+
+  .step {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 20px;
+  }
+  .step-num { width: 42px; height: 42px; font-size: 1.05rem; }
+  .step-body h3 { margin-top: 0; font-size: 1.05rem; }
+
+  .schedule-table { font-size: .9rem; }
+  .schedule-table th,
+  .schedule-table td { padding: 12px 15px; }
+
+  .guideline { padding: 18px 20px; }
+}
