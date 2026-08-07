@@ -841,3 +841,48 @@ img { max-width: 100%; display: block; }
   .honours li { padding: 14px 16px 14px 38px; font-size: .92rem; }
   .honours li::before { left: 15px; top: 13px; }
 }
+
+
+/* =========================================================
+   Release v1.0 — QA fixes
+   Issues found while testing the merged site before production.
+   ========================================================= */
+
+/* QA-1  On phones the header wraps to two rows (~330px of an 812px
+   viewport). Keeping it sticky left almost no room for content, so
+   the header scrolls away below 600px. */
+@media (max-width: 600px) {
+  .site-header { position: static; }
+  .header-inner { gap: 12px; padding-block: 12px; }
+}
+
+/* QA-2  No visible keyboard focus anywhere — links and buttons were
+   only distinguishable on hover. Adds a consistent focus ring. */
+:focus-visible {
+  outline: 3px solid var(--indigo);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+.site-footer :focus-visible { outline-color: #fff; }
+
+/* QA-3  Respect reduced-motion preferences: the card lift and smooth
+   scroll can trigger discomfort for motion-sensitive users. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+
+  .card:hover,
+  .link-card:hover,
+  .category-card:hover,
+  .event-item:hover,
+  .step:hover,
+  .achievement:hover,
+  .btn:hover { transform: none; }
+}
