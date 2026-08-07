@@ -3,12 +3,162 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse every category of student club at the university — technology, sports, cultural and debate societies." />
   <title>Club Categories | University Student Clubs Portal</title>
   <link rel="stylesheet" href="../styles/style.css" />
 </head>
 <body>
-  <!-- TODO: Club Categories page — placeholder, to be implemented on feature/clubs-page -->
-  <h1>Club Categories</h1>
-  <p>Placeholder page. Content coming soon.</p>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">UC</span>
+        <span class="brand-text">
+          <strong>University Clubs</strong>
+          <small>Student Portal</small>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="clubs.html" class="active">Clubs</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="highlights.html">Highlights</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-head">
+      <div class="container">
+        <p class="eyebrow">Explore</p>
+        <h1>Club Categories</h1>
+        <p class="page-head-lead">
+          Every registered society on campus belongs to one of four families. Read what
+          each one actually does week to week, then follow the category that matches how
+          you want to spend your time.
+        </p>
+      </div>
+    </section>
+
+    <section class="container section">
+
+      <div class="grid grid-2 category-grid">
+
+        <article class="category-card cat-tech">
+          <header class="category-head">
+            <span class="category-badge">Technology</span>
+            <h2>Technology Clubs</h2>
+          </header>
+          <p>
+            For students who would rather build something than read about it. Technology
+            societies run weekly hands-on sessions — writing code, wiring boards, breaking
+            into deliberately vulnerable machines — and they are the pipeline that feeds
+            the university's competition teams.
+          </p>
+          <ul class="club-list">
+            <li><strong>Computing Society</strong> — weekly programming clinics, hackathons and open-source sprints.</li>
+            <li><strong>Robotics Club</strong> — line-followers, drones and the annual inter-university robot war.</li>
+            <li><strong>AI &amp; Data Circle</strong> — reading group plus practical machine-learning workshops.</li>
+            <li><strong>Cybersecurity Guild</strong> — capture-the-flag practice and defensive security labs.</li>
+          </ul>
+          <p class="category-meta"><span>9 clubs</span><span>~700 members</span></p>
+        </article>
+
+        <article class="category-card cat-sports">
+          <header class="category-head">
+            <span class="category-badge">Sports</span>
+            <h2>Sports Clubs</h2>
+          </header>
+          <p>
+            Competitive squads and casual sides sit side by side here. Most sports clubs
+            train two evenings a week and field a team in the inter-departmental league,
+            but nearly all of them keep a beginners' session with no trial required.
+          </p>
+          <ul class="club-list">
+            <li><strong>Cricket Club</strong> — inter-departmental league plus a beginners' net on Sundays.</li>
+            <li><strong>Football Club</strong> — men's and women's squads, weekly fixtures through the semester.</li>
+            <li><strong>Badminton &amp; Table Tennis</strong> — open courts, ladder rankings, no trials.</li>
+            <li><strong>Athletics &amp; Fitness</strong> — track training, strength sessions and the annual sports gala.</li>
+          </ul>
+          <p class="category-meta"><span>12 clubs</span><span>~900 members</span></p>
+        </article>
+
+        <article class="category-card cat-cultural">
+          <header class="category-head">
+            <span class="category-badge">Cultural</span>
+            <h2>Cultural Clubs</h2>
+          </header>
+          <p>
+            The societies behind almost every large event on the university calendar.
+            Cultural clubs cover music, drama, photography, fine art and the regional
+            societies that run food and heritage festivals each term.
+          </p>
+          <ul class="club-list">
+            <li><strong>Dramatics Society</strong> — two full productions a year plus improv nights.</li>
+            <li><strong>Music Club</strong> — jam sessions, open mics and the spring concert.</li>
+            <li><strong>Photography Circle</strong> — photo walks, darkroom basics and the annual exhibition.</li>
+            <li><strong>Fine Arts &amp; Calligraphy</strong> — studio hours, mural projects and craft workshops.</li>
+          </ul>
+          <p class="category-meta"><span>11 clubs</span><span>~600 members</span></p>
+        </article>
+
+        <article class="category-card cat-debate">
+          <header class="category-head">
+            <span class="category-badge">Debate</span>
+            <h2>Debate Societies</h2>
+          </header>
+          <p>
+            If you want to argue well under pressure, this is where it is taught. Debate
+            societies drill parliamentary and British Parliamentary formats, run mock
+            sessions, and send delegations to national circuits every semester.
+          </p>
+          <ul class="club-list">
+            <li><strong>English Debating Society</strong> — BP format, weekly practice rounds and national circuit tours.</li>
+            <li><strong>Urdu Debating Society</strong> — declamation, extempore and inter-university contests.</li>
+            <li><strong>Model United Nations</strong> — committee simulations and the flagship annual MUN conference.</li>
+            <li><strong>Literary Circle</strong> — writing workshops, poetry evenings and the campus magazine.</li>
+          </ul>
+          <p class="category-meta"><span>8 clubs</span><span>~400 members</span></p>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <h2>Found a category that fits?</h2>
+        <p>
+          Check what those clubs have scheduled this semester, or go straight to the
+          registration steps and sign up.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="join.html">How to join</a>
+          <a class="btn btn-ghost" href="events.html">See upcoming events</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 University Student Clubs Portal &middot; Student Affairs Office</p>
+      <nav aria-label="Footer navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="clubs.html">Clubs</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="highlights.html">Highlights</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
 </body>
 </html>
