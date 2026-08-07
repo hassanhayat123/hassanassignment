@@ -3,12 +3,227 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Workshops, competitions, meetups and seminars scheduled by student clubs this semester." />
   <title>Upcoming Events | University Student Clubs Portal</title>
   <link rel="stylesheet" href="../styles/style.css" />
 </head>
 <body>
-  <!-- TODO: Upcoming Events page — placeholder, to be implemented on feature/events-page -->
-  <h1>Upcoming Events</h1>
-  <p>Placeholder page. Content coming soon.</p>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">UC</span>
+        <span class="brand-text">
+          <strong>University Clubs</strong>
+          <small>Student Portal</small>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="clubs.html">Clubs</a></li>
+          <li><a href="events.html" class="active">Events</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="highlights.html">Highlights</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-head">
+      <div class="container">
+        <p class="eyebrow">This semester</p>
+        <h1>Upcoming Events</h1>
+        <p class="page-head-lead">
+          Everything student clubs have scheduled between September and December.
+          Most sessions are open to all students — a few competitions need you to
+          register with the organising club first.
+        </p>
+      </div>
+    </section>
+
+    <section class="container section">
+      <h2 class="section-title">Event calendar</h2>
+      <p class="section-lead">
+        Sorted by date. Anything marked <em>Registration required</em> closes one week
+        before the event.
+      </p>
+
+      <ul class="event-list">
+
+        <li class="event-item">
+          <div class="event-date">
+            <span class="event-day">12</span>
+            <span class="event-month">Sep</span>
+          </div>
+          <div class="event-body">
+            <span class="event-tag tag-workshop">Workshop</span>
+            <h3>Intro to Git &amp; GitHub for Beginners</h3>
+            <p>
+              A hands-on two-hour session covering branching, pull requests and how to
+              recover when you break something. Bring a laptop.
+            </p>
+            <p class="event-meta">
+              <span>Computing Society</span>
+              <span>CS Lab 3, Block B</span>
+              <span>3:00 – 5:00 PM</span>
+            </p>
+          </div>
+        </li>
+
+        <li class="event-item">
+          <div class="event-date">
+            <span class="event-day">24</span>
+            <span class="event-month">Sep</span>
+          </div>
+          <div class="event-body">
+            <span class="event-tag tag-competition">Competition</span>
+            <h3>Inter-Departmental Cricket Cup — Opening Round</h3>
+            <p>
+              Eight departmental sides, knockout format, running across three weekends.
+              Squad lists must be submitted to the Sports Office beforehand.
+            </p>
+            <p class="event-meta">
+              <span>Cricket Club</span>
+              <span>Main Ground</span>
+              <span>Registration required</span>
+            </p>
+          </div>
+        </li>
+
+        <li class="event-item">
+          <div class="event-date">
+            <span class="event-day">08</span>
+            <span class="event-month">Oct</span>
+          </div>
+          <div class="event-body">
+            <span class="event-tag tag-seminar">Seminar</span>
+            <h3>Careers in Artificial Intelligence</h3>
+            <p>
+              A panel of four alumni working in machine learning talk through how they
+              got in, what they actually do, and what they wish they had studied.
+            </p>
+            <p class="event-meta">
+              <span>AI &amp; Data Circle</span>
+              <span>Auditorium A</span>
+              <span>11:00 AM – 1:00 PM</span>
+            </p>
+          </div>
+        </li>
+
+        <li class="event-item">
+          <div class="event-date">
+            <span class="event-day">19</span>
+            <span class="event-month">Oct</span>
+          </div>
+          <div class="event-body">
+            <span class="event-tag tag-meetup">Meetup</span>
+            <h3>Autumn Photo Walk — Old City</h3>
+            <p>
+              A guided walk through the old quarter with a short composition briefing
+              first. Any camera, including a phone, is fine.
+            </p>
+            <p class="event-meta">
+              <span>Photography Circle</span>
+              <span>Meet at Main Gate</span>
+              <span>7:30 AM – 12:00 PM</span>
+            </p>
+          </div>
+        </li>
+
+        <li class="event-item">
+          <div class="event-date">
+            <span class="event-day">02</span>
+            <span class="event-month">Nov</span>
+          </div>
+          <div class="event-body">
+            <span class="event-tag tag-competition">Competition</span>
+            <h3>National Debating Championship — Campus Qualifiers</h3>
+            <p>
+              British Parliamentary format. The two winning teams represent the
+              university at the national circuit in January.
+            </p>
+            <p class="event-meta">
+              <span>English Debating Society</span>
+              <span>Seminar Hall 2</span>
+              <span>Registration required</span>
+            </p>
+          </div>
+        </li>
+
+        <li class="event-item">
+          <div class="event-date">
+            <span class="event-day">15</span>
+            <span class="event-month">Nov</span>
+          </div>
+          <div class="event-body">
+            <span class="event-tag tag-workshop">Workshop</span>
+            <h3>Robotics Build Night — Line Follower Sprint</h3>
+            <p>
+              Teams of three build and race a line-following robot in a single evening.
+              All components and tools are provided by the club.
+            </p>
+            <p class="event-meta">
+              <span>Robotics Club</span>
+              <span>Engineering Workshop</span>
+              <span>5:00 – 10:00 PM</span>
+            </p>
+          </div>
+        </li>
+
+        <li class="event-item">
+          <div class="event-date">
+            <span class="event-day">06</span>
+            <span class="event-month">Dec</span>
+          </div>
+          <div class="event-body">
+            <span class="event-tag tag-cultural">Cultural</span>
+            <h3>Winter Concert &amp; Drama Night</h3>
+            <p>
+              The Music Club and Dramatics Society close the semester with a joint
+              evening — a short play followed by a live set.
+            </p>
+            <p class="event-meta">
+              <span>Music Club &amp; Dramatics Society</span>
+              <span>Open Air Theatre</span>
+              <span>6:00 PM onwards</span>
+            </p>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <h2>Want your club's event listed here?</h2>
+        <p>
+          Club office bearers can submit an event to the Student Affairs Office at least
+          two weeks before the date and it will appear on this calendar.
+        </p>
+        <a class="btn btn-primary" href="join.html">Join a club first</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 University Student Clubs Portal &middot; Student Affairs Office</p>
+      <nav aria-label="Footer navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="clubs.html">Clubs</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="highlights.html">Highlights</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
 </body>
 </html>
