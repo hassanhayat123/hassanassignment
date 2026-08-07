@@ -1,0 +1,9 @@
+/* =========================================================
+   University Student Clubs Portal — shared stylesheet
+   All pages link to this single file via ../styles/style.css
+   Each feature branch appends its own page section below.
+   ========================================================= */
+
+/* --- placeholder baseline --- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: system-ui, sans-serif; }
