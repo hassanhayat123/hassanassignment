@@ -734,3 +734,110 @@ img { max-width: 100%; display: block; }
 
   .guideline { padding: 18px 20px; }
 }
+
+
+/* --- Club Achievements (highlights.html) — Member 4 ------ */
+.achievement {
+  position: relative;
+  padding: 30px 26px 24px;
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--muted);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.achievement:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+
+.achievement h3 { font-size: 1.12rem; margin: 14px 0 10px; }
+.achievement p  { font-size: .94rem; margin-bottom: 0; }
+
+.achievement-rank {
+  display: inline-grid;
+  place-items: center;
+  min-width: 48px;
+  height: 30px;
+  padding-inline: 12px;
+  border-radius: 999px;
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  background: var(--surface-alt);
+  color: var(--body);
+}
+
+.achievement-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  margin-top: 16px !important;
+  padding-top: 13px;
+  border-top: 1px solid var(--line);
+  font-size: .83rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+/* Medal accents */
+.achievement.gold   { border-top-color: #f0a500; }
+.achievement.silver { border-top-color: #9aa4bf; }
+.achievement.bronze { border-top-color: #c07a3e; }
+
+.achievement.gold   .achievement-rank { background: rgba(240, 165, 0, .18); color: #8a6008; }
+.achievement.silver .achievement-rank { background: rgba(154, 164, 191, .22); color: #55607d; }
+.achievement.bronze .achievement-rank { background: rgba(192, 122, 62, .17); color: #8d5525; }
+
+/* Flagship event tiles */
+.highlight-tile {
+  padding: 26px 24px;
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+.highlight-tile h3 { font-size: 1.08rem; color: var(--indigo); }
+.highlight-tile p  { font-size: .94rem; margin-bottom: 0; }
+
+/* Individual honours */
+.honours {
+  display: grid;
+  gap: 12px;
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+.honours li {
+  position: relative;
+  padding: 16px 20px 16px 44px;
+  border-radius: var(--radius-sm);
+  background: var(--surface-alt);
+  font-size: .95rem;
+  line-height: 1.65;
+}
+.honours li::before {
+  content: "\2605";
+  position: absolute;
+  left: 17px;
+  top: 15px;
+  color: var(--amber);
+  font-size: 1rem;
+}
+.honours strong { color: var(--ink); }
+
+/* Responsive — highlights page */
+@media (max-width: 900px) {
+  .achievement { padding: 26px 22px 22px; }
+  .honours li  { padding: 15px 18px 15px 40px; }
+}
+
+@media (max-width: 600px) {
+  .achievement      { padding: 22px 20px 20px; }
+  .achievement h3   { font-size: 1.04rem; }
+  .achievement-meta { flex-direction: column; gap: 4px; }
+
+  .highlight-tile { padding: 20px 18px; }
+
+  .honours li { padding: 14px 16px 14px 38px; font-size: .92rem; }
+  .honours li::before { left: 15px; top: 13px; }
+}
